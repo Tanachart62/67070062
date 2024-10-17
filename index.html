@@ -1,33 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="8">
-<meta name="Viewpoint" content="wide=device -width, initial-scale=1">
-<title >doc</title>
-<link rel="stylesheet" href="css.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+    <script src="script.js"></script>
 </head>
+
 <body>
-<div class="nav">
-    <nav class="nav-item">
-        <span> Home</span>
-        <span>Dowlond</span>
-        <span>Menu</span>
-        <a href="https://www.roblox.com/#:~:text=Roblox%20is%20the%20ultimate%20virtual%20universe%20that%20lets%20you%20create,">
-            link </a>
-    </nav>
-    <div class="img1">
-        <img src="https://th.bing.com/th/id/OIP.HBZbJxa88o6OBcEC7-dqogAAAA?rs=1&pid=ImgDetMain">
-    <div class ="button1">     
-        <button type="button" >
-            <a href="https://www.roblox.com/#:~:text=Roblox%20is%20the%20ultimate%20virtual%20universe%20that%20lets%20you%20create,">
-                click pls
-            </a>
-        </button>
+    <div id="my-title" class="my-title">
+        Tanachart sae-oung
     </div>
-    <footer>
-        <img width="500" height="200" src="https://th.bing.com/th/id/R.850b9967cfe8a90081a37dbc49061c48?rik=HPn%2fr3XSrl89Bw&pid=ImgRaw&r=0">
-    <p>this is free robux</p>
-    </footer>
-</div>
+    <div class="my-profile">
+        <img src="https://p16-va.lemon8cdn.com/tos-alisg-v-a3e477-sg/o0iL4A2yeEMgBuhAizivD2yCQSrPIjSAeKJgEB~tplv-tej9nj120t-origin.webp" width="183" height="183"
+            id="img-profile" />
+        <div class="noti">
+            1
+        </div>
+    </div>
+    <div class="my-panel">
+        <div class="my-grid">
+            <label for="userName">
+                Set the Username:
+            </label>
+            <input type="text" id="userName" name="userName" placeholder="Enter Username">
+            <button type="button" onclick="setuserName()">SET</button>
+        </div>
+        <div class="my-grid">
+            <label for="imgURL">
+                Set the profile image URL:
+            </label>
+            <input type="text" id="imgURL" name="imgURL" placeholder="Enter Image URL">
+            <button type="button" onclick="setProfile()">SET</button>
+        </div>
+    </div>
+    <div class="my-phone">
+        <label>
+            Phone Number List
+        </label>
+        <div class="contact">
+            <input type="text" id="addName" placeholder="Name" />
+            <input type="tel" id="addTel" placeholder="Tel" />
+            <button type="button" onclick="addContact()">ADD</button>
+            <button type="button" onclick="exportCSV()">EXPORT</button>
+        </div>
+        <div class="datalist">
+            <table id="my-table" cellspacing="0" cellpadding="0">
+                <tr class="first-tr">
+                    <th width="35%">
+                        No.
+                    </th>
+                    <th width="35%">
+                        Name
+                    </th>
+                    <th width="30%">
+                        Phone Number
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        1
+                    </td>
+                    <td>
+                        Hello Kitty
+                    </td>
+                    <td>
+                        0987654321
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
 </body>
+
 </html>
